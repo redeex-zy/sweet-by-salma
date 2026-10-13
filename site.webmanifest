@@ -1,0 +1,12 @@
+{
+  "name": "Sweet by Salma — Cake Atelier",
+  "short_name": "Sweet by Salma",
+  "icons": [
+    {"src": "favicon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "favicon-512.png", "sizes": "512x512", "type": "image/png"}
+  ],
+  "theme_color": "#fcf6f1",
+  "background_color": "#fffaf7",
+  "display": "standalone",
+  "start_url": "."
+}
