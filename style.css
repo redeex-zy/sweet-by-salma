@@ -6,6 +6,12 @@ html[dir=rtl] body{font-family:'IBM Plex Sans Arabic',var(--sans)}html[dir=rtl] 
 @media(max-width:365px){.hero h1{font-size:38px}.hero-buttons{gap:13px}.text-link{font-size:11px}.hero-art{height:385px}.hero-image-frame{height:362px}.cake-photo{height:195px}.filter-button{font-size:9px}.brand-word{font-size:19px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
-/* Sweet by Salma branded favicon used as a compact mark in the header */
+
 .brand-icon{width:42px;height:42px;object-fit:contain;flex:none;display:block;border-radius:12px;}
 @media(max-width:540px){.brand-icon{width:34px;height:34px;}}
+
+
+.tiny-star,.hero-decoration,.three-points b,.quote-flower,.image-corner-mark,.step-icon,.upload-symbol,.order-feature>span,.advance-note>span:first-child {font-family: Georgia, 'Times New Roman', serif; font-variant-emoji:text; font-style:normal;}
+.hero-buttons .button>span:last-child,.button>span:last-child {font-family:Arial,sans-serif;font-size:19px;font-weight:400;line-height:1;letter-spacing:0;}
+.hero-decoration {opacity:.55; font-size:70px;}
+@media(max-width:610px){.hero-decoration{font-size:47px;bottom:6px}}
