@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Preview and branch contexts are additionally protected by generated noindex headers.
+[context.deploy-preview.environment]
+  SITE_PREVIEW = "true"
+
+[context.branch-deploy.environment]
+  SITE_PREVIEW = "true"
