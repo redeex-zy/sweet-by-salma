@@ -400,7 +400,7 @@ await emit(
 const host = origin.hostname;
 await emit(
   '_redirects',
-  `https://www.${host}/* ${origin.origin}/:splat 301!\nhttp://www.${host}/* ${origin.origin}/:splat 301!\nhttp://${host}/* ${origin.origin}/:splat 301!\n${!preview && process.env.SITE_NAME ? `https://${process.env.SITE_NAME}.netlify.app/* ${origin.origin}/:splat 301!\n` : ''}/ /fr/ 301!\n/index.html /fr/ 301!\n${urls.map(({ url }) => `${url}index.html ${url} 301!\n${url.slice(0, -1)} ${url} 301!`).join('\n')}\n`,
+  `https://www.${host}/* ${origin.origin}/:splat 301!\nhttp://www.${host}/* ${origin.origin}/:splat 301!\nhttp://${host}/* ${origin.origin}/:splat 301!\n${!preview && process.env.SITE_NAME ? `https://${process.env.SITE_NAME}.netlify.app/* ${origin.origin}/:splat 301!\n` : ''}/ /fr/ 301!\n\n`,
 );
 await emit(
   '_headers',
