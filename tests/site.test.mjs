@@ -160,11 +160,16 @@ test('sitemap is well-formed, canonical-only and complete; robots allows assets'
   assert.ok(!robots.includes('Disallow:'));
   assert.equal(robots.includes('Sitemap: ' + origin + '/sitemap.xml'), !preview);
 });
-test('host policies cover www, HTTP, root and index.html; previews cannot be indexed', async () => {
+test('host policies cover www and root without conflicting Netlify redirects; previews cannot be indexed', async () => {
   const redirects = await readFile(path.join(out, '_redirects'), 'utf8');
   assert.ok(redirects.includes(`https://www.${new URL(origin).hostname}/* ${origin}/:splat 301!`));
   assert.ok(redirects.includes('/ /fr/ 301!'));
-  for (const p of pages) assert.ok(redirects.includes(`${p.url}index.html ${p.url} 301!`));
+  for (const p of pages) {
+    // Netlify pretty URLs normalize index.html and trailing slashes natively.
+    // Explicit rules here previously caused redirect loops in production.
+    assert.ok(!redirects.includes(`${p.url}index.html ${p.url} 301!`));
+    assert.ok(!redirects.includes(`${p.url.slice(0, -1)} ${p.url} 301!`));
+  }
   assert.equal(
     (await readFile(path.join(out, '_headers'), 'utf8')).includes('X-Robots-Tag: noindex'),
     preview,
