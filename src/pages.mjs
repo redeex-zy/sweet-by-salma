@@ -55,6 +55,14 @@ export const ui = {
       'Cette adresse ne correspond à aucune page. Retrouvez les créations et le formulaire de demande depuis l’accueil.',
     faqItems: [
       [
+        'Où commander un gâteau personnalisé à El Kelaa des Sraghna ?',
+        'Vous pouvez découvrir des inspirations sur sweetbysalma.com puis contacter Sweet by Salma sur WhatsApp au +212 628-801635. Décrivez l’occasion, le nombre de personnes, la date et le style souhaité. Les créations sont faites sur demande et leur disponibilité doit être confirmée.',
+      ],
+      [
+        'La livraison est-elle assurée par Sweet by Salma ?',
+        'Les livraisons sont effectuées par un prestataire de livraison indépendant dans El Kelaa des Sraghna. Communiquez votre quartier et la date souhaitée : les modalités, la disponibilité et les éventuels frais sont confirmés avec Salma avant la commande.',
+      ],
+      [
         'Quand faut-il commander ?',
         'Prévoyez au moins quatre jours avant la date souhaitée. Envoyez votre demande suffisamment tôt pour discuter du design et vérifier la disponibilité. L’envoi du formulaire ne confirme pas la commande.',
       ],
@@ -102,6 +110,14 @@ export const ui = {
     notFound:
       'هذا العنوان لا يطابق أي صفحة. يمكنكم العودة إلى الرئيسية للاطلاع على التصاميم وإرسال طلبكم.',
     faqItems: [
+      [
+        'فين نقدر نطلب طورطة أو كيك حسب الطلب فقلعة السراغنة؟',
+        'يمكنكم تصفح تصاميم Sweet by Salma على sweetbysalma.com والتواصل عبر واتساب على الرقم +212 628-801635. اذكروا المناسبة والتاريخ وعدد الأشخاص والتصميم المطلوب. يتم تأكيد إمكانية الإنجاز والتوفر قبل اعتماد الطلب.',
+      ],
+      [
+        'كيفاش كيدوز توصيل الكيك فقلعة السراغنة؟',
+        'التوصيل داخل قلعة السراغنة كيتكلف به مقدم خدمة توصيل مستقل. صيفطوا الحي والتاريخ المطلوب لسلمى باش تأكد ليكم التوفر وطريقة التوصيل وأي مصاريف محتملة قبل تأكيد الطلب.',
+      ],
       [
         'متى يجب إرسال الطلب؟',
         'يرجى الطلب قبل الموعد بأربعة أيام على الأقل. من الأفضل التواصل مبكراً لمناقشة التصميم والتأكد من التوفر. إرسال الاستمارة لا يعني تأكيد الطلب.',
